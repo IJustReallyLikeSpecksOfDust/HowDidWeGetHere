@@ -47,3 +47,22 @@ Fine. Fine. I’ll do the diary one. I just think it’s overall a more creative
 >Sources say this could be due to a number of reasons, especially the idea that it has to be perfect. That and people feel to stuck on what to write. Some sort of encouragement would work well to ensure people don't just give up. Maybe have a list of prompts of which one is randomly selected and displayed(if I can figure out how to do that). Also, a page on the website with adivice on how to manage keeping a diary would give people a reason to keep writing? This would help keep people engaged.
 
 ### Primary Research
+when asked about their diary habits, people responded with the following:  
+![data](Images/keep.jpg)
+![data](Images/whynot.jpg)
+![data](Images/digital.jpg)
+![data](Images/use.jpg)  
+This data not only shows that a majority of people do not keep a diary, but the leading reason as to why is people's lack of ability to stay consistent. Furthermore, when offered the idea of a digital diary, each person responded with at least a bit of positivity when asked if they'd use a digital diary.
+
+### UI/UX Design
+#### The UX is as follows:
+![data](Images/ux.jpg)  
+#### These are the wireframes for the following pages
+#### **Homepage**
+![data](Images/home.jpg)    
+#### **Writing Page**
+![data](Images/writing.jpg)
+#### **Info Page**
+![data](Images/info.jpg)
+#### **Help Page**
+![data](Images/help.jpg)
