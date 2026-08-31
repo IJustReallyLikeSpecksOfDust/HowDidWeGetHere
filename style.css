@@ -1,0 +1,11 @@
+html{
+    background-color: rgb(197, 197, 197);
+}
+
+box{
+    background-color: rgb(116, 116, 116);
+    width: 25%;
+    height: 25%;
+    align-content: center;
+    justify-content: center;
+}

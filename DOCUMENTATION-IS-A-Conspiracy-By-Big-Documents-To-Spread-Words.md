@@ -64,5 +64,4 @@ This data not only shows that a majority of people do not keep a diary, but the 
 ![data](Images/writing.jpg)
 #### **Info Page**
 ![data](Images/info.jpg)
-#### **Help Page**
-![data](Images/help.jpg)
+
