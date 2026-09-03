@@ -2,10 +2,34 @@ html{
     background-color: rgb(197, 197, 197);
 }
 
-box{
-    background-color: rgb(116, 116, 116);
-    width: 25%;
-    height: 25%;
-    align-content: center;
+body{
+    background-color: rgb(82, 82, 82);
+}
+
+.header{
+    padding: 30px;
+    text-align: center;
+    background-color: rgb(119, 119, 119);
+    color: black;
+    font-size: 30px;
+    max-height: 50px;
+}
+
+.button-style{
+    background-color: pink;
+    color: rgb(0, 0, 0);
+    border: none; 
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    margin: 4px 2px;
+    box-sizing: border-box;
+}
+
+.item{
+    background-color: rgb(197, 197, 197);
+    border: none;
+    display: flex;
     justify-content: center;
+    align-items: center;
 }
