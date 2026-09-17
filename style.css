@@ -1,35 +1,70 @@
-html{
-    background-color: rgb(197, 197, 197);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* -- These are all the colours that are used later --*/
+
+:root{
+    --bg: #f5f0eb;
+    --surface: #ffffff;
+    --text-secondary: #6b5a4e;
+    --border: #e5ddd6;
+    --accent: #b8865b;
+    --accent-light: #b8885b;
+    --shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+    --radius: 20px;
+    --transition: 0.3 cubis-bezier(0.2, 0.9, 0.3, 1);
+    }
+
+[data-theme="dark"]{
+    --bg: #1a1410;
+    --surface: #2a221c;
+    --text: #f0e6dc;
+    --text-secondary: #b8a69a;
+    --border: #3d322b;
+    --accent: #d4a373;
+    --accent-light: #3d322b;
+    --shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
 }
 
 body{
-    background-color: rgb(82, 82, 82);
+    background: var(--bg);
+    color: var(--text);
+    transition: background var(--transition), color var(--transition);
+    min-height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
 }
 
-.header{
-    padding: 30px;
-    text-align: center;
-    background-color: rgb(119, 119, 119);
-    color: black;
-    font-size: 30px;
-    max-height: 50px;
-}
-
-.button-style{
-    background-color: pink;
-    color: rgb(0, 0, 0);
-    border: none; 
-    padding: 10px;
-    text-align: center;
-    text-decoration: none;
-    margin: 4px 2px;
-    box-sizing: border-box;
-}
-
-.item{
-    background-color: rgb(197, 197, 197);
-    border: none;
+/* -- Lock Screen --*/
+#lockScreen{
+    position: fixed;
+    inset: 0;
+    background: var(--bg);
+    z-index: 1000;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+#lockScreen.hidden{
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(0.95);
+}
+
+#lockScreen .lock-icon{
+    font-size: 60px;
+    color: var(--accent);
+    background: var(--accent-light);
+    padding: 30px;
+    border-radius: 60px;
 }
