@@ -1,22 +1,104 @@
 <!DOCTYPE html> 
+<!-- TUTORIAL USED: https://www.youtube.com/watch?v=cipihnawJww -->
 <html lang="en-AU"> 
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial scale=1.0">
-        <title>The Amazing Digital Diary</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/quill/0.0.0-experimental-fdd181b39-20240117/quill.snow.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/quill/0.0.0-experimental-fdd181b39-20240117/quill.js"></script>
+        <title>The Amazing Digital Diary</title>
     </head>
+<body>
 
-    <body>
-        <div class="header">
-            <h1>Header</h1>
-            <p>My supercool header</p>
+    <!--Lock Screen-->
+    <div id="lockScreen">
+        <!--Ahhhhh. I have been enlightened. The fas fa does the icons cuz it's from the font things and it gets the lock from there. I see...-->
+        <div class="lock-icon"><i class="fas fa-lock"></i></div>
+        <!--This is the writing obv-->
+        <h1>The Amazing Digital Diary</h1>
+        <p>Please enter your passcode to continue</p>
+        <!--This is all the Password box stuff-->
+        <div class="lock-input-group">
+            <input type="password" id="lockInput" placeholder="Passcode" maxlength="20" autofocus/>
+            <!--See? I know what fas fa is now!-->
+            <button id="unlockBtn"><i class="fas fa-arrow-right"></i></button>
         </div>
-        <div class="item">
-            <nav>
-                <!--<button type="button" a href= "Writing.html"></a>>Click Me!</button>-->
-                <a href="Writing.html" class="button-style">Click Me!</a>
-            </nav>    
+        <!--If something goes wrong, show this message-->
+        <div class="lock error" id="lockError"></div>
+    </div>
+
+    <!-- Main Thingy! -->
+    <div id="app" style="display: none;"></div>
+        <!-- Header. In case you can't read the next line. Oh and I should clarify I'm talking to myself, not insulting anyone who may or may not read this-->
+        <div class="app-header"></div>
+            <div class="brand"><i class="fas fa-book-open"></i>My Diary</div>
+            <!-- This is all the search bar stuff-->
+            <div class="header-actions"></div>
+                <div class="searchbar">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="searchInput" placeholder="Search"/>
+                </div>
+                <!-- This is the moon button -->
+                <button class="theme-btn" id="themeToggle"><i class="fas fa-moon" id="themeIcon"></i></button>
+                <button id="LockBtn"><i class="fas fa-lock"></i></button>
+            </div>
         </div>
-    </body>
+        <!-- Main Grid -->
+        <div class="diary-grid">
+            <!-- Calendar I hate having to use American spelling it's killing me -->
+            <div class="calender-card">
+                <div class="calender-header">
+                    <h3 id="claMonthYear"></id>September 2026</h3>
+                    <div>
+                        <!-- Left and Right Buttons -->
+                        <button id="prevMonth"><i class="fas fa-chevron-left"></i></button>
+                        <button id="nextMonth"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+                    
+                <div class="calender-grid" id="claenderGrid"></div>
+                <div style="margin-top: 14px; font-size: 13px; color: var(--text-secondary); text-align: center;"></div>
+                <span style="display: inline-block; width: 10px; height: 10px; border-radius: 10px; background: var(--accent); margin-right: 6px;"></span> has entry
+            </div>
+        </div>
+        <!-- Entries-->
+        <div class="entries-section">
+
+            <!-- Mood Tracker -->
+            <div class="mood-tracker">
+                <span class="mood-label"><i class="fas fa-smile"></i>Mood</span>
+                <div class="mood-options" id="moodOptions">
+                    <button data-mood="😆" title="Happy">😆</button>
+                    <button data-mood="😐" title="Neutural">😐</button>
+                    <button data-mood="😢" title="Sad">😢</button>
+                    <button data-mood="😡" title="Angry">😡</button>
+                    <button data-mood="😴" title="Tired">😴</button>
+                    <button data-mood="😟" title="Stressed">😟</button>
+                </div>
+
+                <span class="selected-mood-text" id="selectedMoodText">None</span>
+            </div>
+
+            <!-- Text Editor -->
+            <div class="editor-wrapper">
+                <div id="editor-container"></div>
+                <div class="editor-actions">
+                    <button class="btn-delete" id="deleteEntryBtn"><i class="fas fa-trash-alt"></i>Delete</button>
+                    <button class="btn-save" id="saveEntryBtn"><i class="fas fa-save"></i>Save</button>
+                </div>
+            </div>
+
+            <!-- Entries List -->
+            <div style="display:flex; justify-content: space-between; align-items: center; margin-top: 4px;"></div>
+            <h4 style="font-weight: 600; font-size: 16px;"><i class="fas fa-list-ul" style="color: var(--accent);"></i>Recent Entries</h4>
+            <span style="font-size: 13px; color: var(--text-secondary);" id="entryCount">0 Entries</span>
+        </div>
+
+        <div class="entries-list" id="entriesList">
+            <div class="no-entries">No entries yet. Write your first diary entry!</div>
+        </div>
+    </div>
+</body>
 </html>
