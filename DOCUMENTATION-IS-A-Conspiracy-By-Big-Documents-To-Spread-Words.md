@@ -54,16 +54,13 @@ IMPACT/EFFORT MATRIX
 |Convenient, addresses a need, and achievable within the time frame|I don't know how original the concept is, and if the market of people who want diaries would care to go digital.|There could be ways to enhance the functionality such as visual customisation. This concept is also seemingly quite unique.|Cybersecurity needs to be a big focus here as diaries are supposed to contain personal info. I would highly advise against any cloud systems.|
 ### Reflect And Choose
 Fine. Fine. I’ll do the diary one. I just think it’s overall a more creative idea, and it appeals to a good audience. Better impact than the thousands of apps, websites etc that already exist to berate you about screentime. It also just overall has more potential. And it’s probably more of the sort of thing I myself would use. So, I’ll do that.
+
+
 ## Requirements Outline
 ### Functional Requirements  
 **Typing** - There needs to be an interface in which people can type words in, otherwise the whole idea of a diary is redundant  
 **Saving** - Work needs to be saved somewhere somehow. Users should likely be able to access previous texts. 
 **Security** - There needs to be some level of security in the website so only users only have access to their texts.
-
-> Or maybe it'll just be a website where people have all the tools to make a digital diary, and can choose to download the files to keep on their device. That may very much be more reasonable. In that case, the requirements outline will be as follows:  
-
-**Typing** - There needs to be an interface in which people can type words in, otherwise the whole idea of a diary is redundant  
-**Downloading** - Users are able to download the diary page(s) they've written.
 
 ### Non-Functional Requirements
 **Stickers** - allows users to add stickers as a way to add more creativity to the diaries
