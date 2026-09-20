@@ -33,6 +33,9 @@ I'll admit, I tried. Mindmaps did not help me, and so I just made a bit of a lis
 |Movie Recs|A platform purely for people to recommend, review and keep a watchlist for all sorts of movies and TV shows. You can filter by genre, recency, or ratings.|Media Influence|Again, basically anyone. I’m sure everyone at one point has struggled to find something good to watch. Had to ask google ‘what’s the best movies recent’.|
 |Study Coercer|Has a bunch of different things to encourage study. Including a wheel with a 60/30 chance of 30mins study or 10min break. Ya have to spin it everytime after you’re done.|School Influence|Students who need a way to study more effectively.|
 
+IMPACT/EFFORT MATRIX
+![chart](Images/Chart.png)
+
 ### SWOT Analysis
 #### **Idea 1 - Phone Use**
 |Strengths|Weaknesses|Opportunities|Threats|
