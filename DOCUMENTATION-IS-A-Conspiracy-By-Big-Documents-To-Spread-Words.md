@@ -99,6 +99,12 @@ This data not only shows that a majority of people do not keep a diary, but the 
 
 ## Testing and Evaluating  
 ### Peer Evaluation
-### Evaluation Of Issues
+### Evaluation Of Issues  
+This project has little to no social issues. It is simple and focuses on individual creativity, not promoting any information that may upset viewers.
 ### Project Evaluation
+This project was...truly something. For starters, there really was NOT much time to work on such a project. Also, I didn't really have an understanding of anything related to css, html, or javascript, but more on that later. This is why I decided to use a tutorial as a base for my project. And despite the fact I'm aware this will hinder my mark, I don't have any regrets. I learnt a lot from the tutorial, and was able to get a well-functioning website together. I did get rid of the parts that I didn't want, and coloured it. So I kinda personalised it. I did as much as I could. Ultimately, I was able to submit a functioning project, which I consider a success. Also, I learnt a lot on my way, so I think I spent my time well.
+
+But, I feel that overall the task itself was flawed. And before you kill me, I'll explain. The tutorials felt like a bit of a waste. They took a lot of time and I don't think I or many else of my peers found them to be valuable. I felt it was a lot of copy paste and not an explanation of what anything does. And then, anything we did gain from the tutorials was likely forgotten, as we then moved to focus on the documentation. if we'd done the tutorials after the theory component, more info might've stuck? Idk, just a thought. And yes, there are many tutorials available on w3 schools, so why not use that as the tutorials?
+
+Anyways, just my overall thoughts on the task, just wanted to state my views, that's all! So yeah, for once I'm not trying to be a meanie. And I'm completely fine if my marks aren't great. I enjoyed the task.
 
