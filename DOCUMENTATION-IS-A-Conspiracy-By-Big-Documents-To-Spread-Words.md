@@ -24,14 +24,15 @@ I'll admit, I tried. Mindmaps did not help me, and so I just made a bit of a lis
 - homework
 - assessments
 
-## Convergent Thinking  
+## Convergent Thinking   
 |Idea Name|What It Does|Influence It Explores|Who It Helps|
+|---|---|---|---|
 |Phone use|You can track how much time you’ve spent each week using your phone. There will also be a page with alternative activity recommendations rather than doomscrolling. And just a bunch of info to make u hate your current life choices of spending all day everyday just looking at a magic rectangle.|Technology Influence|Any people who find themselves on their devices (phones especially) too much who want to find alternative ways to spend their time.|
 |Task Time|Create any tasks you have to do, set times, information etc and the app will guilt trip you into doing them. And it will do the opposite when you make progress on said tasks.|Motivation Influence|People who struggle to start tasks, and need a liiiiiiittle more encouragement to start tasks|
-|The Extended Minecraft Planner|A planner/tracker for achievements, armour, weapons, enchantments and other items in minecraft. Also has a suggestion page for builds|Technology Influence|Well, a bunch of people who play minecraft, from beginners to more experienced players.|
+|The Extended Minecraft Planner|A planner/tracker for achievements, armour, weapons, enchantments and other items in minecraft. Also has a suggestion page for builds|Technology Influence|Well, a bunch of people who play minecraft, from beginners to more experienced players.|  
 |The Amazing Digital Diary|Well, for most people, diaries don’t really work cuz a) you don’t have the time for them b) it’s kinda inconvenient to carry around. So, having a digital diary that encourages you to write daily is much easier to stay consistent with.|Creative Influence|Anyone really. A little bit of daily writing goes a long way.|
 |Movie Recs|A platform purely for people to recommend, review and keep a watchlist for all sorts of movies and TV shows. You can filter by genre, recency, or ratings.|Media Influence|Again, basically anyone. I’m sure everyone at one point has struggled to find something good to watch. Had to ask google ‘what’s the best movies recent’.|
-|Study Coercer|Has a bunch of different things to encourage study. Including a wheel with a 60/30 chance of 30mins study or 10min break. Ya have to spin it everytime after you’re done.|School Influence|Students who need a way to study more effectively.|
+|Study Coercer|Has a bunch of different things to encourage study. Including a wheel with a 60/30 chance of 30mins study or 10min break. Ya have to spin it everytime after you’re done.|School Influence Students who need a way to study more effectively.|  
 
 IMPACT/EFFORT MATRIX
 ![chart](Images/Chart.png)
@@ -39,11 +40,11 @@ IMPACT/EFFORT MATRIX
 ### SWOT Analysis
 #### **Idea 1 - Phone Use**
 |Strengths|Weaknesses|Opportunities|Threats|
-|-|-|-|-|
-|everyone experiences this. helpful. reccomendations are really good cuz u stop the problem and then like also make a solution yk|maybe try being motivating rather than hating current life choices..|you can put like statristics yk like today u have spent this much time on this app.| be motivating|
-|Has a clear somewhat positive impact and yeah|You'd have to be looking at your phone to see this though, also most people already have something like this in their settings|You could add little rewards if people reduce their screen time|idk but how are you going to measure ppls screen time|
-|Really relevant and tackles a serious issue especially in our generation|I don't think people hating their life choices will make them a return user, people normally like to feel good when using an app|Maybe a feature that locks social media apps so users don't have a choice to give up on turning away from them|Some other anti-social media apps already exist and possibly work better than this one as they lock social media apps|
-|With how pertinent this issue is to modern society, their is a definite need for something like this.|The effect of 'making you hate your current life choices' could be more likely to dissuade the app's usage rather than phone usage, which is of course, bad. Many phone addicts probably already know the negative effects so this may be redundant.|People do indeed hate their own life choices relating to their phones so there is certainly a market for this. Alternate activity recommendations could also be expanded into many useful ideas.|There is already an inbuilt way to track phone usage within your phone. Whilst the other features are definitely workable, that alone would not be.|
+|-|-|-|-|  
+|everyone experiences this. helpful. reccomendations are really good cuz u stop the problem and then like also make a solution yk|maybe try being motivating rather than hating current life choices..|you can put like statristics yk like today u have spent this much time on this app.| be motivating|  
+|Has a clear somewhat positive impact and yeah|You'd have to be looking at your phone to see this though, also most people already have something like this in their settings|You could add little rewards if people reduce their screen time|idk but how are you going to measure ppls screen time|  
+|Really relevant and tackles a serious issue especially in our generation|I don't think people hating their life choices will make them a return user, people normally like to feel good when using an app|Maybe a feature that locks social media apps so users don't have a choice to give up on turning away from them|Some other anti-social media apps already exist and possibly work better than this one as they lock social media apps|  
+|With how pertinent this issue is to modern society, their is a definite need for something like this.|The effect of 'making you hate your current life choices' could be more likely to dissuade the app's usage rather than phone usage, which is of course, bad. Many phone addicts probably already know the negative effects so this may be redundant.|People do indeed hate their own life choices relating to their phones so there is certainly a market for this. Alternate activity recommendations could also be expanded into many useful ideas.|There is already an inbuilt way to track phone usage within your phone. Whilst the other features are definitely workable, that alone would not be.|  
 #### **Idea 2 - Digital Diary**
 |Strengths|Weaknesses|Opportunities|Threats|
 |-|-|-|-|
