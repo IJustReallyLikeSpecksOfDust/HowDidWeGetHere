@@ -1,3 +1,4 @@
+/* -- The asterisk is for universal. So I don't have to write the font every time etc --*/
 *{
     margin: 0;
     padding: 0;
@@ -5,28 +6,30 @@
     font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
-/* -- These are all the colours that are used later --*/
+/* -- These are all the colours that are used later. Instead if using each colour and remembering it
+also it means you can do dark/light theme --*/
 
 :root{
     --bg: #f5f0eb;
     --surface: #ffffff;
+    --text: #2d241c;
     --text-secondary: #6b5a4e;
     --border: #e5ddd6;
     --accent: #b8865b;
-    --accent-light: #b8885b;
+    --accent-light: #f0e6dc;
     --shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
     --radius: 20px;
-    --transition: 0.3 cubis-bezier(0.2, 0.9, 0.3, 1);
+    --transition: 0.3s cubic-bezier(0.2, 0.9, 0.3, 1);
     }
 
 [data-theme="dark"]{
-    --bg: #1a1410;
-    --surface: #2a221c;
+    --bg: #210F04;
+    --surface: #3B1C09;
     --text: #f0e6dc;
-    --text-secondary: #b8a69a;
-    --border: #3d322b;
-    --accent: #d4a373;
-    --accent-light: #3d322b;
+    --text-secondary: ;
+    --border: #210F04;
+    --accent: #BB6B00;
+    --accent-light: #934B00;
     --shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
 }
 
@@ -41,8 +44,8 @@ body{
     padding: 20px;
 }
 
-/* -- Lock Screen --*/
-#lockScreen{
+/* -- Home Screen --*/
+#homeScreen{
     position: fixed;
     inset: 0;
     background: var(--bg);
@@ -51,20 +54,375 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 30px;
+    gap: 20px;
     transition: opacity 0.5s, transform 0.5s;
 }
 
-#lockScreen.hidden{
+#homeScreen.hidden{
     opacity: 0;
     pointer-events: none;
     transform: scale(0.95);
 }
 
-#lockScreen .lock-icon{
+#homeScreen .home-icon{
     font-size: 60px;
     color: var(--accent);
     background: var(--accent-light);
     padding: 30px;
     border-radius: 60px;
+}
+
+#homeScreen h1{
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--text);
+}
+
+#homeScreen p{
+    color: var(--text-secondary);
+    margin-bottom: 10px;
+}
+
+#openDiaryBtn{
+    padding: 14px 36px;
+    border-radius: 60px;
+    border: none;
+    background: var(--accent);
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#openDiaryBtn:hover{
+    transform: scale(1.05);
+    filter: brightness(1.1);
+}
+
+/*-- MAIN APP --*/
+#app{
+    width: 100%;
+    max-width: 1300px;
+    background: var(--surface);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    border: 1px solid var(--border);
+    padding: 28px 30px 30px;
+    transition: background var(--transition), border var(--transition), box-shadow var(--transition);
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    position: relative;
+}
+
+/* TOP BAR */
+.app-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+.app-header .brand{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.app-header .brand i{
+    color: var(--accent);
+}
+
+.header-actions{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.header-actions button{
+    background: var(--accent-light);
+    border: none;
+    color: var(--text);
+    padding: 10px 16px;
+    border-radius: 40px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: 0.2s;
+    border: 1px solid transparent;
+}
+
+.header-actions button:hover{
+    border-color: var(--accent);
+    transform: translateY(-2px);
+}
+
+.header-actions .theme btn{
+    background: transparent;
+    border: 1px solid var(--border);
+    border-radius: 40px;
+    padding: 10px 14px;
+    font-size: 18px;
+}
+
+/* Entries */
+.entries-section{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Mood Tracker */
+.mood-tracker{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    background: var(--bg);
+    padding: 12px 20px;
+    border-radius: 60px;
+    border: 1px solid var(--border);
+}
+
+.mood-tracker .mood-label{
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--text-secondary);
+}
+
+.mood-options{
+    display: flex;
+    gap: 8px;
+}
+
+.mood-options button{
+    background: transparent;
+    border: none;
+    font-size: 26px;
+    cursor: pointer;
+    padding: 4px 8px;
+    border-radius: 30px;
+    transition: 0.15s;
+    opacity: 0.5;
+    line-height: 1;
+}
+
+.mood-options button:hover{
+    opacity: 0.9;
+    transform: scale(1.15);
+}
+
+.mood-options button.active{
+    opacity: 1;
+    transform: scale(1.1);
+    background: var(--accent-light);
+}
+
+.selected-moood-text{
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-secondary);
+    margin-left: auto;
+}
+
+/* Text Editor */
+.editor-wrapper{
+    background: var(--bg);
+    border-radius: 18px;
+    border: 1px solid var(--border);
+    overflow: hidden;
+    transition: border 0.2s;
+}
+
+.editor-wrapper:focus-within{
+    border-color: var(--accent);
+}
+
+#editor-container{
+    min-height: 180px;
+    background: var(--surface);
+    color: var(--text);
+}
+
+.ql-toolbar{
+    background: var(--bg);
+    border: none !important;
+    border-bottom: 1px solid var(--border) !important;
+}
+
+.ql-container{
+    border: none !important;
+    font-size: 15px;
+}
+
+.ql-editor{
+    min-height: 160px;
+}
+
+.ql-editor.ql-blank::before{
+    color: var(--text-secondary) !important;
+    opacity: 0.6;
+}
+
+.editor-actions{
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    padding: 14px 18px 16px;
+    background: var(--bg);
+    border-top: 1px solid var(--border);
+    flex-wrap: wrap;
+}
+
+.editor-actions button{
+    padding: 10px 20px;
+    border-radius: 60px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+    font-size: 14px;
+}
+
+.btn-save{
+    background: var(--accent);
+    color: white;
+}
+
+.btn-save:hover{
+    transform: scale(1.04);
+    filter: brightness(1.08);
+}
+
+.btn-delete{
+    background: #934B00;
+    color: white;
+    border-color: #690500 !important;
+}
+
+/* Entries List*/
+.entries-list{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-height: 320px;
+    overflow-y: auto;
+    padding-right: 4px;
+}
+
+.entries-list::-webkit-scrollbar{
+    width: 5px;
+}
+
+.entries-list::-webkit-scrollbar-thumb{
+    background: var(--border);
+    border-radius: 10px;
+}
+
+.entry-item{
+    background: var(--bg);
+    padding: 14px 18px;
+    border-radius: 16px;
+    border: 1px solid var(--border);
+    cursor: pointer;
+    transition: 0.15s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+}
+
+.entry-item:hover{
+    border-color: var(--accent);
+    transform: translateX(4px);
+}
+
+.entry-item .entry-preview{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    flex: 1;
+    min-width: 0;
+}
+
+.entry-item .entry-preview .entry-text{
+    font-size: 14px;
+    color: var(--text-secondary);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.entry-item .entry-mood{
+    font-size: 22px;
+    flex-shrink: 0;
+}
+
+.entry-item .entry-delete-btn{
+    background: transparent;
+    border: none;
+    color: var(--text-secondary);
+    cursor: pointer;
+    padding: 4px 8px;
+    border-radius: 30px;
+    transition: 0.15s;
+    font-size: 14px;
+}
+
+.entry-item .entry-delete-btn:hover{
+    background: #934B00;
+    color: white;
+}
+
+.no-entries{
+    text-align: center;
+    color: var(--text-secondary);
+    padding: 30px 0;
+    font-size: 15px;
+}
+
+
+
+
+
+
+/* Responsive */
+@media (max-width: 820px){
+    .diary-grid{
+        grid-template-columns: 1fr;
+    }
+
+    #app{
+        padding: 20px 16px;
+    }
+
+    .search-bar{
+        max-width: 100%;
+    }
+
+    .app-header .brand{
+        font-size: 18px;
+    }
+
+    .mood-tracker{
+        border-radius: 18px;
+        padding: 12px 16px;
+    }
+}
+
+@media(max-width: 400px){
+    .header-actions button span{
+        display: none;
+    }
+
+    .lock-input-group input{
+          width: 160px;
+    }
 }
