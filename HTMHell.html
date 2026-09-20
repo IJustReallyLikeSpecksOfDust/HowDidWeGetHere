@@ -12,57 +12,25 @@
     </head>
 <body>
 
-    <!-- Lock Screen -->
-    <div id="lockScreen">
-        <!--Ahhhhh. I have been enlightened. The fas fa does the icons cuz it's from the font things and it gets the lock from there. I see...-->
-        <div class="lock-icon"><i class="fas fa-lock"></i></div>
-        <!--This is the writing obv-->
+     <!--Home Screen-->
+     <div id="homeScreen">
+        <div class="home-icon"><i class="fas fa-book"></i></div>
         <h1>The Amazing Digital Diary</h1>
-        <p>Please enter your passcode to continue</p>
-        <!--This is all the Password box stuff-->
-        <div class="lock-input-group">
-            <input type="password" id="lockInput" placeholder="Passcode" maxlength="20" autofocus/>
-            <!--See? I know what fas fa is now!-->
-            <button id="unlockBtn"><i class="fas fa-arrow-right"></i></button>
-        </div>
-        <!--If something goes wrong, show this message-->
-        <div class="lock error" id="lockError"></div>
+        <button id="openDiaryBtn">Open Diary</button>
     </div>
 
     <!-- Main Thingy! -->
-    <div id="app" style="display: none;"></div>
+    <div id="app">
         <!-- Header. In case you can't read the next line. Oh and I should clarify I'm talking to myself, not insulting anyone who may or may not read this-->
-        <div class="app-header"></div>
+        <div class="app-header">
             <div class="brand"><i class="fas fa-book-open"></i>My Diary</div>
-            <!-- This is all the search bar stuff-->
-            <div class="header-actions"></div>
-                <div class="searchbar">
-                    <i class="fas fa-search"></i>
-                    <input type="text" id="searchInput" placeholder="Search"/>
-                </div>
+            <div class="header-actions">
                 <!-- This is the moon button -->
                 <button class="theme-btn" id="themeToggle"><i class="fas fa-moon" id="themeIcon"></i></button>
-                <button id="LockBtn"><i class="fas fa-lock"></i></button>
             </div>
         </div>
         <!-- Main Grid -->
         <div class="diary-grid">
-            <!-- Calendar I hate having to use American spelling it's killing me -->
-            <div class="calender-card">
-                <div class="calender-header">
-                    <h3 id="claMonthYear"></id>September 2026</h3>
-                    <div>
-                        <!-- Left and Right Buttons -->
-                        <button id="prevMonth"><i class="fas fa-chevron-left"></i></button>
-                        <button id="nextMonth"><i class="fas fa-chevron-right"></i></button>
-                    </div>
-                </div>
-                    
-                <div class="calender-grid" id="claenderGrid"></div>
-                <div style="margin-top: 14px; font-size: 13px; color: var(--text-secondary); text-align: center;"></div>
-                <span style="display: inline-block; width: 10px; height: 10px; border-radius: 10px; background: var(--accent); margin-right: 6px;"></span> has entry
-            </div>
-        </div>
         <!-- Entries-->
         <div class="entries-section">
 
@@ -89,16 +57,8 @@
                     <button class="btn-save" id="saveEntryBtn"><i class="fas fa-save"></i>Save</button>
                 </div>
             </div>
-
-            <!-- Entries List -->
-            <div style="display:flex; justify-content: space-between; align-items: center; margin-top: 4px;"></div>
-            <h4 style="font-weight: 600; font-size: 16px;"><i class="fas fa-list-ul" style="color: var(--accent);"></i>Recent Entries</h4>
-            <span style="font-size: 13px; color: var(--text-secondary);" id="entryCount">0 Entries</span>
-        </div>
-
-        <div class="entries-list" id="entriesList">
-            <div class="no-entries">No entries yet. Write your first diary entry!</div>
-        </div>
     </div>
+</div>
+<script src="script.js"></script>
 </body>
 </html>
